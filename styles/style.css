@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;0,700;1,400&display=swap');
+@import url('./header.css');
+@import url('./banner.css');
 
 :root {
+  --font-main: "Poppins";
   --bg-color: #ffffff;
   --button-color: #326589;
   --text-title-color: #fc6621;
@@ -8,11 +11,22 @@
   --text-price-color: #002f52;
   --text-author-color: #858585;
   --text-tag-color: #9c9c9c;
+  --gradient-color: linear-gradient(to right, #002F52, #326589)
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
-  font-family: 'Poppins';
+  font-family: var(--font-main);
+  font-size: 16px;
   overflow-x: hidden;
+  font-weight: 400;
 }
 
 .wrap {
@@ -20,19 +34,10 @@ body {
   margin: 0 auto;
 }
 
-.header {
-  text-align: center;
-  width: 100%;
-  background-color: var(--bg-color);
-  margin: 15px 15px;
-}
 
-.banner {
-  background-image: url('/imagens/Banner-1.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 278px;
-}
+
+
+
 
 .nav {
   display: flex;
